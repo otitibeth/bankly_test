@@ -1,0 +1,150 @@
+name: bankly_transactions
+description: A new Flutter project.
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+# In Windows, build-name is used as the major, minor, and patch parts
+# of the product and file versions while build-number is used as the build suffix.
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+  equatable: ^2.0.5
+  flutter_animate: ^4.1.1+1
+  flutter_bloc: ^8.1.2
+  flutter_svg: ^2.0.0+1
+  freezed_annotation: ^2.2.0
+  intl: ^0.18.0
+  loading_animation_widget: ^1.2.0+4
+  money_formatter: ^0.0.4
+  pull_to_refresh_flutter3: ^2.0.1
+  provider: ^6.0.5
+  shimmer: ^2.0.0
+  dio: ^5.1.2
+
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+  flutter_lints: ^2.0.0
+  build_runner: null
+  flutter_gen: ^5.1.0+1
+  flutter_gen_runner: null
+  freezed: ^2.2.0
+  json_serializable: ^6.5.4
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# the folllowing is meant for asset generator
+flutter_gen:
+  integrations:
+    flutter_svg: true
+
+# The following section is specific to Flutter packages.
+flutter:
+  generate: true
+  uses-material-design: true
+
+  assets:
+   - assets/fonts/
+   - assets/svg/
+
+  
+  fonts:
+    - family: Roboto
+      fonts:
+        - asset: assets/fonts/Roboto/Roboto-Black.ttf
+          weight: 900
+          style: normal
+        - asset: assets/fonts/Roboto/Roboto-BlackItalic.ttf
+          style: italic
+          weight: 900
+        - asset: assets/fonts/Roboto/Roboto-Bold.ttf
+          weight: 700
+          style: normal
+        - asset: assets/fonts/Roboto/Roboto-BoldItalic.ttf
+          style: italic
+          weight: 700
+        - asset: assets/fonts/Roboto/Roboto-Medium.ttf
+          weight: 500
+          style: normal
+        - asset: assets/fonts/Roboto/Roboto-MediumItalic.ttf
+          style: italic
+          weight: 500
+        - asset: assets/fonts/Roboto/Roboto-Regular.ttf
+          weight: 400
+          style: normal
+        - asset: assets/fonts/Roboto/Roboto-Light.ttf
+          weight: 300
+          style: normal
+        - asset: assets/fonts/Roboto/Roboto-LightItalic.ttf
+          style: italic
+          weight: 300
+        - asset: assets/fonts/Roboto/Roboto-Italic.ttf
+          style: italic
+          weight: 400
+        - asset: assets/fonts/Roboto/Roboto-Thin.ttf
+          weight: 100
+          style: normal
+        - asset: assets/fonts/Roboto/Roboto-ThinItalic.ttf
+          style: italic
+          weight: 100
+    - family: sf-ui-display
+      fonts:
+        - asset: assets/fonts/sf-ui-display/sf-ui-display-black.otf
+          weight: 900
+          style: normal
+        - asset: assets/fonts/sf-ui-display/sf-ui-display-bold.otf
+          weight: 700
+          style: normal
+        - asset: assets/fonts/sf-ui-display/sf-ui-display-heavy.otf
+          weight: 800
+          style: normal
+        - asset: assets/fonts/sf-ui-display/sf-ui-display-medium.otf
+          weight: 500
+          style: normal
+        - asset: assets/fonts/sf-ui-display/sf-ui-display-light.otf
+          weight: 300
+          style: normal
+        - asset: assets/fonts/sf-ui-display/sf-ui-display-thin.otf
+          weight: 200
+          style: normal
+        - asset: assets/fonts/sf-ui-display/sf-ui-display-ultralight.otf
+          weight: 100
+          style: normal
+        - asset: assets/fonts/sf-ui-display/sf-ui-display-semibold.otf
+          weight: 600
+          style: normal
+   
